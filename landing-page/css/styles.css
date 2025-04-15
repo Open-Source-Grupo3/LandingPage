@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7f50;
+}
+
+/* Botones de cambio de idioma */
+.lang-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.btn-lang {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-lang:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.btn-lang.active {
+    background-color: #ff7f50;
+    color: white;
+    border-color: #ff7f50;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #ffe5d4;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Botones generales */
+.btn-primary {
+    background-color: #ff5a36;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e24e2f;
+}
+
+.btn-secondary {
+    background-color: #ffc9a8;
+    color: #333;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f0b18f;
+}
+
+/* Secciones */
+main section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+h4 {
+    color: #ff5a36;
+    margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
