@@ -38,3 +38,17 @@ Brindar una solución web para que cocineros caseros y pequeños restaurantes pu
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/Open-Source-Grupo3/LandingPage.git
+   ```
+2. Abre el archivo `index.html` en tu navegador.
+
+---
+
+## 👥 Créditos
+
+Este proyecto fue desarrollado por el equipo del curso **Desarrollo de Aplicaciones Open-Source**, como parte del trabajo final académico.
+
+---
+
+## 📄 Licencia
+
+Este proyecto es de uso académico. Todos los derechos reservados por el equipo autor.

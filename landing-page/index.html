@@ -1,66 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>PlatoX - Comida cerca de ti</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
 </head>
 <body>
 <header>
-    <h1>PlatoX</h1>
-    <nav>
-        <a href="#como-funciona" data-i18n="comoFunciona">¿Cómo funciona?</a>
-        <a href="#beneficios" data-i18n="beneficios">Beneficios</a>
-        <a href="#empezar" data-i18n="empezar">Empezar</a>
-    </nav>
-    <div class="lang-switcher">
-        <button id="btn-es" class="btn-lang">ES</button>
-        <button id="btn-en" class="btn-lang">EN</button>
+    <div class="header-container">
+        <h1 class="logo">PlatoX</h1>
+        <nav class="main-nav">
+            <a href="#como-funciona" data-i18n="comoFunciona">¿Cómo funciona?</a>
+            <a href="#beneficios" data-i18n="beneficios">Beneficios</a>
+            <a href="#empezar" data-i18n="empezar">Empezar</a>
+        </nav>
+        <div class="lang-switcher">
+            <button id="btn-es" class="btn-lang">ES</button>
+            <button id="btn-en" class="btn-lang">EN</button>
+        </div>
     </div>
 </header>
 
 <main>
-    <section class="hero">
-        <h2 data-i18n="tituloHero">Comida casera y local, cerca de ti</h2>
-        <p data-i18n="subtituloHero">Conecta con cocineros y restaurantes de tu barrio.</p>
-        <img src="img/hero-comida.jpg" alt="Plato de comida casera" class="hero-img" />
-        <div class="hero-buttons">
-            <button class="btn-primary" data-i18n="buscarComida">Buscar comida</button>
-            <button class="btn-secondary" data-i18n="ofrecerPlatos">Ofrecer mis platos</button>
+    <section class="hero-carousel" data-aos="fade-up">
+        <div class="carousel-slide active" style="background-image: url('img/slide1.jpg');">
+            <div class="carousel-content">
+                <h2 data-i18n="slide1Title">Comida casera y local, cerca de ti</h2>
+                <p data-i18n="slide1Desc">Conecta con cocineros y restaurantes de tu barrio.</p>
+                <div class="btn-group">
+                    <button class="btn-primary" data-i18n="buscarComida">Buscar comida</button>
+                    <button class="btn-secondary" data-i18n="ofrecerPlatos">Ofrecer mis platos</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('img/slide2.jpg');">
+            <div class="carousel-content">
+                <h2 data-i18n="slide2Title">Descubre nuevos sabores</h2>
+                <p data-i18n="slide2Desc">Explora comidas únicas y apoya lo local.</p>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('img/slide3.jpg');">
+            <div class="carousel-content">
+                <h2 data-i18n="slide3Title">Haz tu pedido fácilmente</h2>
+                <p data-i18n="slide3Desc">Pide, recibe y disfruta desde tu casa.</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prevSlide" aria-label="Slide anterior">&#10094;</button>
+            <button id="nextSlide" aria-label="Slide siguiente">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+    </section>
+
+    <section id="como-funciona" class="wide-section bg-light" data-aos="fade-up">
+        <div class="section-content">
+            <h3 data-i18n="comoFunciona">¿Cómo funciona PlatoX?</h3>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p data-i18n="paso1">Regístrate como cliente o cocinero/restaurante.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p data-i18n="paso2">Explora o publica menús deliciosos.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p data-i18n="paso3">Haz pedidos fácilmente dentro de tu zona.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <p data-i18n="paso4">Recibe, disfruta y califica.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="como-funciona">
-        <h3 data-i18n="comoFunciona">¿Cómo funciona PlatoX?</h3>
-        <ol>
-            <li data-i18n="paso1">Regístrate como cliente o cocinero/restaurante.</li>
-            <li data-i18n="paso2">Explora o publica menús deliciosos.</li>
-            <li data-i18n="paso3">Haz pedidos fácilmente dentro de tu zona.</li>
-            <li data-i18n="paso4">Recibe, disfruta y califica.</li>
-        </ol>
+    <section id="beneficios" class="wide-section" data-aos="fade-up">
+        <div class="section-content">
+            <h3 data-i18n="beneficios">Beneficios para todos</h3>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h4 data-i18n="clientes">Clientes</h4>
+                    <ul>
+                        <li data-i18n="cliente1">Comida rica y casera sin salir de tu barrio.</li>
+                        <li data-i18n="cliente2">Apoya a cocineros y negocios locales.</li>
+                        <li data-i18n="cliente3">Encuentra nuevos sabores todos los días.</li>
+                    </ul>
+                </div>
+                <div class="benefit">
+                    <h4 data-i18n="cocineros">Cocineros y Restaurantes</h4>
+                    <ul>
+                        <li data-i18n="cocinero1">Llega a más personas de tu zona.</li>
+                        <li data-i18n="cocinero2">Publica tus menús sin comisiones altas.</li>
+                        <li data-i18n="cocinero3">Haz crecer tu clientela con facilidad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="beneficios">
-        <h3 data-i18n="beneficios">Beneficios para todos</h3>
-        <h4 data-i18n="clientes">Clientes</h4>
-        <ul>
-            <li data-i18n="cliente1">Comida rica y casera sin salir de tu barrio.</li>
-            <li data-i18n="cliente2">Apoya a cocineros y negocios locales.</li>
-            <li data-i18n="cliente3">Encuentra nuevos sabores todos los días.</li>
-        </ul>
-        <h4 data-i18n="cocineros">Cocineros y Restaurantes</h4>
-        <ul>
-            <li data-i18n="cocinero1">Llega a más personas de tu zona.</li>
-            <li data-i18n="cocinero2">Publica tus menús sin comisiones altas.</li>
-            <li data-i18n="cocinero3">Haz crecer tu clientela con facilidad.</li>
-        </ul>
+    <section class="services">
+        <h2 data-i18n="services_title">Nuestros Servicios</h2>
+        <p data-i18n="services_subtitle">Diseñados para conectar con lo que más importa: comida auténtica cerca de
+            ti.</p>
+        <div class="service-cards">
+            <div class="service-card" data-aos="fade-up">
+                <img src="img/pedido-icon.png" alt="Pedidos">
+                <h3 data-i18n="service1_title">Pedidos Personalizados</h3>
+                <p data-i18n="service1_desc">Haz pedidos especiales a cocineros caseros de tu barrio.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <img src="img/seguridad-icon.png" alt="Seguridad">
+                <h3 data-i18n="service2_title">Conexión Segura</h3>
+                <p data-i18n="service2_desc">PlatoX prioriza tu seguridad y privacidad en cada transacción.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <img src="img/apoyo-icon.png" alt="Apoyo">
+                <h3 data-i18n="service3_title">Apoyo Local</h3>
+                <p data-i18n="service3_desc">Impulsa pequeños negocios y cocinas familiares con cada compra.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="empezar">
-        <h3 data-i18n="empezar">¿Listo para empezar?</h3>
-        <p data-i18n="cta">Únete a PlatoX hoy y transforma la forma en que disfrutas la comida de tu barrio.</p>
-        <button class="btn-primary" data-i18n="uneteAhora">¡Únete ahora!</button>
+    <section id="cta" class="cta-section" data-aos="zoom-in">
+        <div class="cta-content">
+            <h3 data-i18n="listo">¿Listo para empezar?</h3>
+            <p data-i18n="ctaTexto">Únete a la comunidad de amantes de la comida local. Regístrate gratis y descubre un mundo de sabores cerca de ti.</p>
+            <a href="#" class="cta-button" data-i18n="empezarBtn">¡Empieza ahora!</a>
+        </div>
     </section>
 </main>
 
@@ -69,5 +148,10 @@
 </footer>
 
 <script src="js/main.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
