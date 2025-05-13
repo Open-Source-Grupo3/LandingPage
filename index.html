@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatoX - Connecting diners with the best local food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="PlatoX Logo" />
+                <h1>PlatoX</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">About Us</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+                <li class="nav-item"><a href="#plans" class="nav-link" data-i18n="nav.plans">Plans</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-btn" data-i18n="nav.signin">Sign In</a></li>
+                <a href="#" class="nav-link language-switch" id="languageToggle">
+                    <i class="fas fa-globe"></i> ES
+                </a>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Connect with the best local food</h1>
+                <p data-i18n="hero.desc">PlatoX is the platform that connects diners with the best local restaurants and
+                    chefs. Discover new flavors or share your culinary talent.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary" data-i18n="hero.find">Find restaurants</a>
+                    <a href="#" class="btn btn-secondary" data-i18n="hero.register">Register my restaurant</a>
+                </div>
+            </div>
+            <!-- img src="img/restaurante.jpg" alt="PlatoX Platform" class="hero-image" /> -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 data-i18n="about.title">About Us</h2>
+                <p data-i18n="about.desc">
+                    PlatoX was born with the mission to bridge the gap between hungry diners and passionate local cooks.
+                    We believe everyone should have access to authentic food experiences while helping local businesses
+                    thrive.
+                </p>
+                <p data-i18n="about.mission">
+                    Our mission is to promote culinary diversity, support independent restaurants, and provide a modern
+                    and intuitive platform for food discovery and connection.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/about.png" alt="About PlatoX" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="services.title">Our Services</h2>
+                <p data-i18n="services.desc">A unique experience for both diners and local restaurants and chefs</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3 data-i18n="services.diners.title">For Diners</h3>
+                    <p data-i18n="services.diners.desc">Discover restaurants near your location...</p>
+                    <ul>
+                        <li data-i18n="services.diners.maps">Location-based search with interactive maps</li>
+                        <li data-i18n="services.diners.filters">Filters by cuisine type, prices, and ratings</li>
+                        <li data-i18n="services.diners.reviews">Reviews and ratings from other users</li>
+                        <li data-i18n="services.diners.favorites">Save your favorite restaurants</li>
+                    </ul>
+                    <a href="#" class="service-cta">Find restaurants <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-icon">
+                        <img src="img/service-client.png" alt="Diner using app" />
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3 data-i18n="services.restaurants.title">For Restaurants and Chefs</h3>
+                    <p data-i18n="services.restaurants.desc">Give visibility to your business...</p>
+                    <ul>
+                        <li data-i18n="services.restaurants.profile">Complete profile with photos, menus, and
+                            specialties</li>
+                        <li data-i18n="services.restaurants.visibility">Greater visibility in local searches</li>
+                        <li data-i18n="services.restaurants.schedule">Schedule and availability management</li>
+                        <li data-i18n="services.restaurants.stats">Statistics on visits and ratings</li>
+                    </ul>
+                    <a href="#" class="service-cta">Register my restaurant <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-icon">
+                        <img src="img/service-restaurant.png" alt="Chef presenting food">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="plans.title">Membership Plans</h2>
+                <p data-i18n="plans.desc">Choose the plan that best suits your needs</p>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-name" data-i18n="plan.basic">Basic</h3>
+                    <div class="plan-price" data-i18n="plan.free">Free <span>/forever</span></div>
+                    <ul class="plan-features">
+                        <li data-i18n="plan.basic.profile">Basic profile</li>
+                        <li data-i18n="plan.basic.search">Limited search</li>
+                        <li data-i18n="plan.basic.reviews">5 reviews per month</li>
+                        <li data-i18n="plan.basic.support">Email support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-i18n="plan.start">Start Now</a>
+                </div>
+                <div class="plan-card popular-plan">
+                    <h3 class="plan-name" data-i18n="plan.premium">Premium</h3>
+                    <div class="plan-price" data-i18n="plan.price.premium">$29.99 <span>/month</span></div>
+                    <ul class="plan-features">
+                        <li data-i18n="plan.premium.profile">Featured profile</li>
+                        <li data-i18n="plan.premium.search">Unlimited search</li>
+                        <li data-i18n="plan.premium.reviews">Unlimited reviews</li>
+                        <li data-i18n="plan.premium.promos">Special promotions</li>
+                        <li data-i18n="plan.premium.support">Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-i18n="plan.choose">Choose Plan</a>
+                </div>
+                <div class="plan-card">
+                    <h3 class="plan-name" data-i18n="plan.business">Business</h3>
+                    <div class="plan-price" data-i18n="plan.price.business">$79.99 <span>/month</span></div>
+                    <ul class="plan-features">
+                        <li data-i18n="plan.business.multiple">Multiple profiles</li>
+                        <li data-i18n="plan.business.stats">Advanced statistics</li>
+                        <li data-i18n="plan.business.marketing">Marketing tools</li>
+                        <li data-i18n="plan.business.pos">POS system integration</li>
+                        <li data-i18n="plan.business.support">24/7 dedicated support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-i18n="plan.choose">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="PlatoX Logo" />
+                    <h2>PlatoX</h2>
+                </div>
+                <p class="footer-text" data-i18n="footer.desc">
+                    Connecting diners with the best local restaurants and chefs. Discover new flavors or share your
+                    culinary talent.
+                </p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.quicklinks">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#plans" data-i18n="nav.plans">Plans</a></li>
+                    <li><a href="#" data-i18n="nav.signin">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.services">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="hero.find">Find Restaurants</a></li>
+                    <li><a href="#" data-i18n="hero.register">Register Restaurant</a></li>
+                    <li><a href="#">API Developers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.contact">Contact</h3>
+                <ul class="footer-contact footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">1801 University Ave, San
+                            Miguel 15088, Lima - Peru</span></li>
+                    <li><i class="fas fa-phone"></i> <span data-i18n="footer.phone">+51 987 654 321</span></li>
+                    <li><i class="fas fa-envelope"></i> <span data-i18n="footer.email">contact@platox.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-i18n="footer.rights">&copy; 2025 PlatoX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
