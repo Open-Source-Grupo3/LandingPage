@@ -70,9 +70,9 @@ Icons are provided by Font Awesome.
 
 ## 👨‍💻 Author
 - SabroSaic Development Team
-- Course: Open Source Development Appilcations – Universidad Peruana de Ciencias Aplicadas (UPC)
+- Course: Open Source Development Applications – Universidad Peruana de Ciencias Aplicadas (UPC)
 - Year: 2025
 
 ## 🏁 Project Status
 - ✅ Completed and ready to deploy.
-- 📦 Compatible with GitHub Pages, Netlify, or Vercel.
+- 📦 Compatible with GitHub Pages and Vercel.
